@@ -1,0 +1,122 @@
+Microsoft Windows [Version 10.0.19043.1889]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\CHINRS\Documents\Angular Project\xyz>node --version
+v16.13.1
+
+C:\Users\CHINRS\Documents\Angular Project\xyz>npm install -g @angular/cli
+'CALL "C:\Program Files\nodejs\\node.exe" "C:\Program Files\nodejs\\node_modules\npm\bin\npm-cli.js" prefix -g' is not recognized as an internal or external command,
+operable program or batch file.
+
+added 3 packages, removed 13 packages, changed 206 packages, and audited 210 packages in 35s
+
+25 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New minor version of npm available! 8.1.2 -> 8.19.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v8.19.1
+npm notice Run npm install -g npm@8.19.1 to update!
+npm notice
+
+C:\Users\CHINRS\Documents\Angular Project\xyz>ng new sampleProject
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? CSS
+CREATE sampleProject/angular.json (2958 bytes)
+CREATE sampleProject/package.json (1045 bytes)
+CREATE sampleProject/README.md (1067 bytes)
+CREATE sampleProject/tsconfig.json (863 bytes)
+CREATE sampleProject/.editorconfig (274 bytes)
+CREATE sampleProject/.gitignore (548 bytes)
+CREATE sampleProject/.browserslistrc (600 bytes)
+CREATE sampleProject/karma.conf.js (1431 bytes)
+CREATE sampleProject/tsconfig.app.json (287 bytes)
+CREATE sampleProject/tsconfig.spec.json (333 bytes)
+CREATE sampleProject/.vscode/extensions.json (130 bytes)
+CREATE sampleProject/.vscode/launch.json (474 bytes)
+CREATE sampleProject/.vscode/tasks.json (938 bytes)
+CREATE sampleProject/src/favicon.ico (948 bytes)
+CREATE sampleProject/src/index.html (299 bytes)
+CREATE sampleProject/src/main.ts (372 bytes)
+CREATE sampleProject/src/polyfills.ts (2338 bytes)
+CREATE sampleProject/src/styles.css (80 bytes)
+CREATE sampleProject/src/test.ts (749 bytes)
+CREATE sampleProject/src/assets/.gitkeep (0 bytes)
+CREATE sampleProject/src/environments/environment.prod.ts (51 bytes)
+CREATE sampleProject/src/environments/environment.ts (658 bytes)
+CREATE sampleProject/src/app/app-routing.module.ts (245 bytes)
+CREATE sampleProject/src/app/app.module.ts (393 bytes)
+CREATE sampleProject/src/app/app.component.html (23115 bytes)
+CREATE sampleProject/src/app/app.component.spec.ts (1094 bytes)
+CREATE sampleProject/src/app/app.component.ts (217 bytes)
+CREATE sampleProject/src/app/app.component.css (0 bytes)
+- Installing packages (npm)...node:events:368
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn C:\Program Files\Git\bin\ ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:282:19)
+    at onErrorNT (node:internal/child_process:477:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on ChildProcess instance at:
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:288:12)
+    at onErrorNT (node:internal/child_process:477:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'spawn C:\\Program Files\\Git\\bin\\',
+  path: 'C:\\Program Files\\Git\\bin\\',
+  spawnargs: [ '-c', 'npm install --ignore-scripts' ]
+}
+
+C:\Users\CHINRS\Documents\Angular Project\xyz>cd sampleProject
+
+
+C:\Users\CHINRS\Documents\Angular Project\xyz\sampleProject> ng serve
+Node packages may not be installed. Try installing with 'npm install'.
+Error: Could not find the '@angular-devkit/build-angular:dev-server' builder's node package.
+
+C:\Users\CHINRS\Documents\Angular Project\xyz\sampleProject>npm install
+'CALL "C:\Program Files\nodejs\\node.exe" "C:\Program Files\nodejs\\node_modules\npm\bin\npm-cli.js" prefix -g' is not recognized as an internal or external command,
+operable program or batch file.
+
+added 916 packages, and audited 917 packages in 2m
+
+122 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\CHINRS\Documents\Angular Project\xyz\sampleProject> ng serve
+? Would you like to share pseudonymous usage data about this project with the Angular Team
+at Google under Google's Privacy Policy at https://policies.google.com/privacy. For more
+details and how to change this setting, see https://angular.io/analytics. Yes
+
+Thank you for sharing pseudonymous usage data. Should you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics disable
+
+Global setting: enabled
+Local setting: enabled
+Effective status: enabled
+√ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   2.10 MB |
+polyfills.js          | polyfills     | 318.06 kB |
+styles.css, styles.js | styles        | 210.09 kB |
+main.js               | main          |  50.18 kB |
+runtime.js            | runtime       |   6.52 kB |
+
+                      | Initial Total |   2.67 MB
+
+Build at: 2022-09-09T07:27:25.554Z - Hash: fe0967aec94e3944 - Time: 23699ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+√ Compiled successfully.
+
+

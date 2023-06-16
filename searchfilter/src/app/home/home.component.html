@@ -1,0 +1,124 @@
+<div class="container-fluid image"  *ngIf="!lService.userRole">
+  <div class="background" *ngIf="!lService.userRole">
+
+    
+    <div class="container mx-auto mt-4 "  *ngIf="!lService.userRole">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card bg-dark" style="width: 22rem;  margin-top: 10rem;">
+              <img src="https://bankingschool.co.in/wp-content/uploads/2018/09/signingacheque.jpg" class="card-img-top" height="220px" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title" >Credit (Lets perform credit operation)</h5>
+                <button (click)="CreditOp()" type="button" class="btn btn-outline-primary">Visit Module</button>
+              </div>
+            </div>
+        </div>    
+           <div class="col-md-4"  *ngIf="!lService.userRole">
+              <div class="card bg-dark" style="width: 22rem; margin-top: 10rem;">
+                  <img src="https://www.investopedia.com/thmb/Pidi_LDC2zg220FjYYAxuKin2f8=/2120x1414/filters:fill(auto,1)/GettyImages-1126878582-6d25dc6732dc464da74e99e037039238.jpg" class="card-img-top" height="220px" alt="...">
+                  <div class="card-body text-light">
+                    <h5 class="card-title">Debit (Lets perform debit operation)</h5>
+                    <button (click)="DebitOp()" type="button" class="btn btn-outline-primary">Visit Module</button>  
+                  </div>
+                </div>
+          </div>    
+              <div class="col-md-4"  *ngIf="!lService.userRole">
+                  <div class="card bg-dark" style="width: 22rem; margin-top: 10rem;">
+                      <img src="https://www.indifi.com/blog/wp-content/uploads/2022/04/Business-Loan-Application-1-scaled.jpeg" class="card-img-top" height="220px" alt="...">
+                      <div class="card-body text-light">
+                        <h5 class="card-title">Apply Loan (Lets apply for loan)</h5>
+                        <br>
+                        <button (click)="ApplyLoanCust()" type="button" class="btn btn-outline-primary">Visit Module</button>
+                      </div>
+                    </div>
+              </div>
+        
+    <!--Following code is for admin dashboard -->
+
+      </div></div></div></div>
+
+      <div class="background" *ngIf="lService.userRole">
+      <div class="container-fluid image" *ngIf="lService.userRole">
+      
+<div class="container mx-auto mt-4 "  *ngIf="lService.userRole">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card bg-dark" style="width: 22rem;">
+            <img  height="250px" src="https://th.bing.com/th/id/R.78e6392904e8c3f11d291e48969444f8?rik=DO6uR65lCMZUiw&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2faha-soft%2ffree-large-boss%2f512%2fAdmin-icon.png&ehk=4XJMyrJTjz5UrvwEcE5CJflh10KN3xlGOztiCVlDePs%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+            <div class="card-body text-light">
+              <h5 class="card-title">Admin Module</h5>
+              <button (click)="AddAdmin()" type="button" class="btn btn-outline-primary">Add Admin</button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button (click)="AdminList()" type="button" class="btn btn-outline-primary"> Admins Details</button>
+            </div>
+          </div>
+      </div>    
+         <div class="col-md-4"  *ngIf="lService.userRole">
+            <div class="card bg-dark" style="width: 22rem;">
+                <img height="250px" src="https://www.infotectraining.com/sites/default/files/field/image/infotec_75.png" class="card-img-top" alt="...">
+                <div class="card-body text-light">
+                  <h5 class="card-title">Customer Module</h5>
+                  <button (click)="AddCust()" type="button" class="btn btn-outline-primary">Add Customers</button>
+                  &nbsp;&nbsp;&nbsp;
+                  <button (click)="CustomerList()" type="button" class="btn btn-outline-primary">Customer Details</button>  
+                </div>
+              </div>
+        </div>   
+        
+        
+        <div class="col-md-4"  *ngIf="lService.userRole">
+          <div class="card bg-dark" style="width: 22rem;">
+              <img height="250px" src="https://www.icicibank.com/content/dam/icicibank/india/managed-assets/images/blog/big/why-current-account-is-important-for-business.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Account Module</h5>
+                <button (click)="AddAcc()" type="button" class="btn btn-outline-primary">Add Account</button>
+                  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button (click)="AccountList()" type="button" class="btn btn-outline-primary">Account Details</button>  
+              </div>
+            </div>
+      </div>    
+
+
+      <div class="col-md-4 mt-5"  *ngIf="lService.userRole">
+        <div class="card bg-dark" style="width: 22rem;">
+            <img height="250px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ1qaWuK0bqQgA9JYDHwcXxmTojawWtD2bOQ&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body text-light">
+              <h5 class="card-title">Transaction Module</h5>
+              <button (click)="AddBal()" type="button" class="btn btn-outline-primary">Opening Deposit</button>
+              &nbsp;
+              <button (click)="TransactionList()" type="button" class="btn btn-outline-primary">Transaction Details</button>
+            </div>
+          </div>
+    </div>    
+
+
+            <div class="col-md-4"  *ngIf="lService.userRole">
+                <div class="card bg-dark" style="width: 22rem; margin-top:3rem ;">
+                    <img height="250px" src="https://cdn.corporatefinanceinstitute.com/assets/debit-credit-analysis1.jpeg"
+                     class="card-img-top" alt="...">
+                    <div class="card-body text-light">
+                      <h5 class="card-title">Credit & Debit Module</h5>
+                      <button (click)="CreditOp()" type="button" class="btn btn-outline-primary">Credit Details</button>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <button (click)="DebitOp()" type="button" class="btn btn-outline-primary">Debit Details</button>
+                    
+                    </div>
+                  </div>
+            </div>
+      
+       
+        
+            <div class="col-md-4 mt-5"  *ngIf="lService.userRole">
+                <div class="card bg-dark" style="width: 22rem;">
+                    <img height="250px" src="https://www.indifi.com/blog/wp-content/uploads/2022/04/Business-Loan-Application-1-scaled.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-light">
+                      <h5 class="card-title ">Loan Module</h5>
+                      <button (click)="ApplyLoanCust()" type="button" class="btn btn-outline-primary">Apply Loan</button>
+                      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                      <button (click)="LoansList()" type="button" class="btn btn-outline-primary">All Loan Application</button>
+                    </div>
+                  </div>
+        </div>
+  </div>
+    </div>
+</div>

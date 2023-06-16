@@ -1,0 +1,115 @@
+<div class="background">
+  <h1 style="text-align:center;">   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;       Loan Application Details   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; </h1>
+     <hr>
+    <div *ngIf="loan">`
+      <div id = "boxes">
+          <table class="table table-bordered text-center mt-5 table-hover" style="margin-top: 260px"></table>
+    
+      <div id = "leftbox">
+          <h3>Basic Loan Details</h3>
+            <div>
+                <label><b>loan Id : </b></label> {{loan.loanId}}
+            </div>
+            <div>
+                <label><b>applicant Name : </b></label> {{loan.customer.firstName +" " +loan.customer.lastName}}
+            </div>
+            <div>
+                <label><b>Phone Number : </b></label> {{loan.customer.mobNo}}
+            </div>
+            <div>
+                <label><b>Email Id : </b></label> {{loan.customer.email}}
+            </div>
+            <div>
+                <label><b>Date Of Application : </b></label> {{loan.dateOfApplication | date:'yyyy-MM-dd'}}
+            </div>
+            <div>
+                <label><b>Date Of Birth : </b></label> {{loan.birthDate | date:'yyyy-MM-dd'}}
+            </div>
+            <div>
+                <label><b>Loan Approval Status : </b></label> {{loan.adminLoanAproval }}
+            </div>
+            <div>
+                <label><b>Id Proof Type: </b></label> {{loan.id_type }}
+            </div>
+            <div>
+                <label><b>Id Proof Number: </b></label> {{loan.idProofNo}}
+            </div>
+            <div>
+                <label><b>Marital Status: </b></label> {{loan.marital_status}}
+            </div>
+            <div>
+                <label><b>Employement Status </b></label> {{loan.employement_status}}
+            </div>
+            <div>
+                <label><b>Place Of work: </b></label> {{loan.place_of_work}}
+            </div>
+            <div>
+                <label><b>Job Title: </b></label> {{loan.job_title}}
+            </div>
+            <div>
+                <label><b>Anual Income : </b></label> {{loan.anual_income }}
+            </div>
+    
+            <div>
+                <label><b>Loan Amount : </b></label> {{loan.loanAmount }}
+            </div>
+    
+            <div>
+                <label><b>Loan Type : </b></label> {{loan.loanType }}
+            </div>
+           
+            <div>
+                <label><b>Loan Approval Status : </b></label> {{loan.adminLoanAproval }}
+            </div>
+            
+      </div>
+    
+    
+
+
+      <div id = "middlebox">
+        <h3>Customer details</h3>
+        <label><b>Customer Id: </b></label> {{loan.customer.custId}}
+        <br>
+        <label><b>First Name </b></label> {{loan.customer.firstName}}
+        <br>
+        <label><b>Last Name: </b></label> {{loan.customer.lastName}}
+        <br>
+        <label><b>MOBILE NO: </b></label> {{loan.customer.mobNo}}
+        <br> 
+        <label><b>Email ID: </b></label> {{loan.customer.email}}
+        &nbsp;&nbsp;
+        &nbsp;&nbsp;
+<br>
+<hr>
+        <h3>Admin details</h3>
+        <label><b>Admin Id: </b></label> {{loan.admin.adminId}}
+        <br>
+        <label><b>First Name </b></label> {{loan.admin.firstName}}
+        <br>
+        <label><b>Last Name: </b></label> {{loan.admin.lastName}}
+        <br>
+        <label><b>MOBILE NO: </b></label> {{loan.admin.mobNo}}
+        <br>
+        
+        <label><b>Email ID: </b></label> {{loan.admin.email}}
+
+<br>
+<br>
+<br>
+
+
+&nbsp;&nbsp;&nbsp;
+        <button (click)="list()" class="btn btn-primary">Back to Loans</button>
+      </div>
+      </div>
+    
+      
+      
+      
+     
+    </div>
+    </div>
+
+
+

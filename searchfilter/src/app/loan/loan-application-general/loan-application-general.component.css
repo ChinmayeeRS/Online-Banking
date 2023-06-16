@@ -1,0 +1,36 @@
+input.ng-invalid{
+    border-left: 5px solid red;
+}
+
+input.ng-valid{
+    border-left: 5px solid green;
+
+}
+
+.error{
+    color: red;
+}
+
+.background{
+    
+  background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+    
+}
+
+.head{
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+    align-items: center;
+    text-align: center;
+}
+
+
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    min-height: 100vh;
+    
+  }

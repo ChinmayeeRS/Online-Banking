@@ -1,0 +1,98 @@
+/*.image {
+  min-height: 100vh;
+  height: 100vh;
+
+position:absolute;
+ 
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+
+background: 
+linear-gradient(
+  to right,
+  rgba(8, 8, 8, 0.692),
+  rgba(27, 27, 27, 0.541)
+), 
+url(https://images.pexels.com/photos/2356071/pexels-photo-2356071.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+background-size: cover;
+}
+
+
+.cards {
+  display: flex;
+}
+
+.admin{
+  position: relative; 
+
+  margin-top: 1rem; 
+  margin-left: 1rem;
+ 
+}
+.cust{
+  
+  position: relative; 
+
+  margin-top: 52rem; 
+  margin-left: -30rem;
+
+}
+
+
+
+.credit-btn{
+
+  position: relative; 
+
+ 
+  margin-top: 13px; 
+  margin-left: -40rem;
+
+}
+
+.cre{
+  
+  position: relative; 
+
+  margin-top: 0rem; 
+
+}
+
+.trans{
+  
+  position: relative; 
+
+  margin-top: 135px; 
+
+}
+.loan{
+  position: relative; 
+
+  margin-top: 135px; 
+ 
+}
+
+
+
+
+
+*/
+
+.image {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+
+  color: white;
+position: absolute;
+
+background: 
+linear-gradient(
+  to right,
+  rgba(8, 8, 8, 0.692),
+  rgba(27, 27, 27, 0.541)
+), 
+url(https://cdn3.vectorstock.com/i/1000x1000/36/27/abstract-yellow-light-line-on-dark-grey-background-vector-23723627.jpg);
+background-size: cover;
+}
